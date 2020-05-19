@@ -1,0 +1,19 @@
+page {
+    includeCSS {
+        tetris_maulwurf =
+        bw_tetris_skin_maulwurf =
+        bw_tetris_tmp_skin_aztec =
+        bw_tetris_skin_aztec =
+    }
+    view {
+        partialRootPaths.2 =
+    }
+}
+
+page {
+    10 {
+        partialRootPaths {
+            1 =
+        }
+    }
+}

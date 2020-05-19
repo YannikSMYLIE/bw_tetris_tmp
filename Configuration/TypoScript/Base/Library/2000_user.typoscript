@@ -1,0 +1,2 @@
+lib.username = TEXT
+lib.username.value = <!--###USERNAME###-->

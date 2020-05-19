@@ -1,0 +1,105 @@
+.tx-bw-tetris td.moving, td.occupied, td.blink {
+  .content {
+    .img {
+      background-image: url('/typo3conf/ext/bw_tetris_tmp/Resources/Skins/Aztec/Public/Images/Game/wall.jpg') !important;
+      background-size: cover !important;
+      opacity: 0.8;
+    }
+  }
+}
+table#next.I .x2y1, table#next.I .x2y2, table#next.I .x2y3, table#next.I .x2y4,
+table#next.O .x1y1, table#next.O .x2y1, table#next.O .x1y2, table#next.O .x2y2,
+table#next.L .x2y1, table#next.L .x2y2, table#next.L .x2y3, table#next.L .x3y3,
+table#next.J .x2y1, table#next.J .x2y2, table#next.J .x2y3, table#next.J .x1y3,
+table#next.S .x1y3, table#next.S .x2y3, table#next.S .x2y2, table#next.S .x3y2,
+table#next.Z .x1y2, table#next.Z .x2y2, table#next.Z .x2y3, table#next.Z .x3y3,
+table#next.T .x1y3, table#next.T .x2y3, table#next.T .x3y3, table#next.T .x2y2 {
+  background-image: url('/typo3conf/ext/bw_tetris_tmp/Resources/Skins/Aztec/Public/Images/Game/wall.jpg') !important;
+  background-size: cover !important;
+}
+.tx-bw-tetris td {
+  border: none !important;
+}
+
+#playgroundContainer {
+  background-image: url(/typo3conf/ext/bw_tetris_tmp/Resources/Skins/Aztec/Public/Images/quetzalcoatl.png);
+  background-size: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+table#playground {
+  background: rgba(0,0,0,0.6);
+
+
+  td.moving, td.occupied, tr.finished td {
+    .content {
+      border-width: 0 !important;
+    }
+  }
+
+  tr.finished {
+
+    td.occupied {
+      animation: none !important;
+
+      $delay : 60;
+      @for $i from 1 through 9 {
+        &:nth-child(#{$i}) .content {
+          animation-delay: #{($delay*9)-($delay*$i)}ms;
+        }
+      }
+
+      .content {
+        animation: moveX linear 0.5s infinite, moveY linear 1s infinite;
+
+        @keyframes moveX {
+          $moveBy : 5px;
+          0% {
+            margin-left: 0;
+            margin-right: 0;
+          }
+          25% {
+            margin-left: -$moveBy;
+            margin-right: $moveBy;
+          }
+          50% {
+            margin-left: 0;
+            margin-right: 0;
+          }
+          75% {
+            margin-left: $moveBy;
+            margin-right: -$moveBy;
+          }
+          100% {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+
+        @keyframes moveY {
+          $moveBy : 5px;
+          0% {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+          25% {
+            margin-top: -$moveBy;
+            margin-bottom: $moveBy;
+          }
+          50% {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+          75% {
+            margin-top: $moveBy;
+            margin-bottom: -$moveBy;
+          }
+          100% {
+            margin-top: 0;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

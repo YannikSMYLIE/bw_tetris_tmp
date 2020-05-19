@@ -1,0 +1,9 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:../Reset.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:../Base/setup.typoscript">
+
+page {
+    includeCSS {
+        tetris_maulwurf = EXT:bw_tetris_tmp/Resources/Skins/Maulwurf/Public/Css/maulwurf.scss
+        bw_tetris_skin_maulwurf = EXT:bw_tetris_tmp/Resources/Skins/Maulwurf/Public/Css/bw_tetris.scss
+    }
+}

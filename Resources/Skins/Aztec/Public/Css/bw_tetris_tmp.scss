@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #FFF !important;
+}
+.ce-bodytext, .frame-type-text {
+    background: rgba(255,255,255,0.7);
+    padding: 15px;
+    h1, h2, h3, h4, h5 {
+        color: #000 !important;
+    }
+}
+.card {
+    h1, h2, h3, h4, h5 {
+        color: #000 !important;
+    }
+}
+
+.tx-bw-tetris table.highscore {
+    background: #FFF !important;
+}
+
+nav#mainNav {
+    background: rgba(13, 105, 49, 0.8) !important;
+    //background-image: url('/typo3conf/ext/bw_tetris_tmp/Resources/Skins/Aztec/Public/Images/Game/wall.jpg') !important;
+}
+
+body {
+    background-image: url('/typo3conf/ext/bw_tetris_tmp/Resources/Skins/Aztec/Public/Images/bg.jpg') !important;
+
+    #allWrapper {
+        background-image: url('/typo3conf/ext/bw_tetris_tmp/Resources/Skins/Aztec/Public/Images/header.png') !important;
+        background-repeat: no-repeat;
+        min-height: 100%;
+        background-position: center -30vh;
+        background-color: rgba(255,255,255,0.4);
+    }
+}

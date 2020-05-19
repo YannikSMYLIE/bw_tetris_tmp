@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Tetris";
+    src: url("../Fonts/Tetris.ttf");
+}
+
+body {
+    font-family: 'Roboto', Helvetica, Arial, sans-serif;
+    background: #ebebeb;
+}
+.secondnav ul {
+    margin: 0;
+    padding: 0;
+    list-style:  none;
+}
+.secondnav li {
+    display: inline-block;
+    font-size: 80%;
+}
+
+#mainWrapper {
+    overflow: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Tetris !important;
+}

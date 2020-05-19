@@ -1,0 +1,68 @@
+# Background-Layouts definieren
+mod.web_layout.BackendLayouts {
+    # Default
+    1 {
+        title = Start
+        icon = EXT:bw_tetris_tmp/Resources/Base/Public/Icons/BeLayouts/Start.jpg
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Inhalt
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    # Select User
+    2 {
+        title = Benutzerauswahl
+        icon = EXT:bw_tetris_tmp/Resources/Base/Public/Icons/BeLayouts/SelectUser.svg
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Inhalt
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    # Game
+    3 {
+        title = Game
+        icon = EXT:bw_tetris_tmp/Resources/Base/Public/Icons/BeLayouts/Start.jpg
+        config {
+            backend_layout {
+                colCount = 1
+                rowCount = 1
+                rows {
+                    1 {
+                        columns {
+                            1 {
+                                name = Inhalt
+                                colPos = 0
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

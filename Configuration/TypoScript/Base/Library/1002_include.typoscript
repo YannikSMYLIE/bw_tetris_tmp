@@ -1,0 +1,5 @@
+page {
+    includeCSS {
+        tetris_base = EXT:bw_tetris_tmp/Resources/Base/Public/Css/basic.css
+    }
+}

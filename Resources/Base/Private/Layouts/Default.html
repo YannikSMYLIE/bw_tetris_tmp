@@ -1,0 +1,16 @@
+<div id="allWrapper">
+    <header id="header">
+        <f:render partial="Navigation/Main" />
+        <f:render partial="Navigation/User" arguments="{usermenu : usermenu}" />
+    </header>
+    <div id="contentWrapper">
+        <div id="mainWrapper">
+            <main class="container my-4" id="main">
+                <f:render section="Main"></f:render>
+            </main>
+        </div>
+        <footer id="footer">
+            <div class="gradient"></div>
+        </footer>
+    </div>
+</div>

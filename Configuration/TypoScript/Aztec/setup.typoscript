@@ -1,0 +1,23 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:../Reset.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:../Base/setup.typoscript">
+
+page {
+    includeCSS {
+        bw_tetris_tmp_skin_aztec = EXT:bw_tetris_tmp/Resources/Skins/Aztec/Public/Css/bw_tetris_tmp.scss
+        bw_tetris_skin_aztec = EXT:bw_tetris_tmp/Resources/Skins/Aztec/Public/Css/bw_tetris.scss
+    }
+}
+
+plugin.tx_bwtetris {
+    view {
+        partialRootPaths.2 = EXT:bw_tetris_tmp/Resources/Skins/Aztec/bw_tetris/Private/Partials/
+    }
+}
+
+page {
+    10 {
+        partialRootPaths {
+            1 = EXT:bw_tetris_tmp/Resources/Skins/Aztec/Private/Partials/
+        }
+    }
+}

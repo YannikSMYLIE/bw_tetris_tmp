@@ -1,0 +1,21 @@
+<f:if condition="{usermenu}">
+    <div style="background: #dfe0e1;">
+        <div class="container py-1 clearfix" style="line-height: 23px;">
+            <div class="float-sm-left">
+                <i class="fal fa-fw fa-user"></i> <strong>Angemeldet als:</strong> <f:cObject typoscriptObjectPath="lib.username" />
+            </div>
+            <div class="float-sm-right text-muted secondnav">
+                <ul>
+                    <f:for each="{usermenu}" as="page">
+                        <li class="ml-3">
+                            <f:link.typolink parameter="{page.data.uid}" class="text-muted">{page.title}</f:link.typolink>
+                        </li>
+                    </f:for>
+                    <li class="ml-3">
+                        <f:link.page pageUid="3" additionalParams="{logintype:'logout'}" class="text-muted">Abmelden</f:link.page>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</f:if>

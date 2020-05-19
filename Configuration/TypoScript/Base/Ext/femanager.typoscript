@@ -1,0 +1,19 @@
+plugin.tx_femanager {
+    view {
+        templateRootPaths {
+            2 = EXT:bw_tetris_tmp/Resources/Base/Extensions/femanager/Private/Templates/
+        }
+        partialRootPaths {
+            2 = EXT:bw_tetris_tmp/Resources/Base/Extensions/femanager/Private/Partials/
+        }
+    }
+    settings {
+        new {
+            validation {
+                email {
+                    required = 0
+                }
+            }
+        }
+    }
+}

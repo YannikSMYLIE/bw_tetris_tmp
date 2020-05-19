@@ -1,0 +1,14 @@
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <div>
+        <div style="display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 2em;" class="mb-5">
+            <div class="mr-4">
+                <f:render partial="Data/Logo" arguments="{maxHeight : 60}" />
+            </div>
+            <span>
+                <f:render partial="Data/Name" />
+            </span>
+        </div>
+
+        <f:format.raw>{content_main}</f:format.raw>
+    </div>
+</div>
